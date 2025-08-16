@@ -4,5 +4,6 @@
 
 void drawHud(void);
 void initHud(void);
+void clearHud(void);
 
 #endif // HUD_H

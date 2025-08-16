@@ -123,6 +123,8 @@ void level_up(){
         VDP_clearText(8,  1, 8);
         VDP_clearText(23, 1, 8);
 
+        clearHud();
+
         title_screen();   // Show title screen.
 
         PAL_setPalette(PAL3, title_pal_1.data, DMA_QUEUE); // Reset PAL3 after title 

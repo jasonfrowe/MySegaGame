@@ -126,6 +126,15 @@ void drawHud(){
 
 }
 
+void clearHud(){
+	// Clear the HUD text
+	VDP_clearText(1, 1, 40); // Clear player score
+	VDP_clearText(31, 1, 40); // Clear enemy score
+	VDP_clearText(15, 2, 9); // Clear level indicator
+	VDP_clearText(17, 1, 5); // Clear game score
+	VDP_clearText(0, 0, 40); // Clear any other text
+}
+
 void initHud(){
 
 	// player_tiles     = VDP_loadTileSet(&player_score_tiles, 1, DMA);
