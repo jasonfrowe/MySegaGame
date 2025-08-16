@@ -13,6 +13,15 @@ void handleInput()
 {
     u16 value = JOY_readJoypad(JOY_1);
 
+    if (value & BUTTON_START) {
+        if (!start_was_pressed) {
+            game_paused = !game_paused;
+            start_was_pressed = 1;
+        }
+    } else {
+        start_was_pressed = 0;
+    }
+
     if (control_style == 0){
         // --- Rotation ---
         if (player_rotation_iframe >= player_rotation_iframe_threshold){

@@ -164,6 +164,11 @@ extern u16 coffset;
 extern u16 STRIP_TILE_8_IDX;
 extern u16 EMPTY_BAR_TILE_IDX;
 
+// Pause state
+extern u16 game_paused;
+// Detect start press instead of start down
+extern u16 start_was_pressed;
+
 // Title screen
 extern s16 control_style;
 extern s16 control_style_old;

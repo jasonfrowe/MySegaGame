@@ -75,6 +75,8 @@ void title_screen(){
         }
 
         if (value & BUTTON_START) {
+            // Prevents reading pause while start is held while entering game loop
+            start_was_pressed = 1;
             break;  // Let's start the game.
         }
 

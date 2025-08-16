@@ -19,6 +19,7 @@
 
 #include "fighters.h"
 #include "background.h"
+#include "pause.h"      // Pause screen
 
 // // Palette for debug font (can be here or in globals/game_data if shared)
 // const u16 debug_font_palette[16] = {
@@ -28,6 +29,9 @@
 
 // u16 ind = TILE_USER_INDEX;
 // Map* star_map;
+
+u16 game_paused = 0;
+u16 start_was_pressed = 0;
 
 int main()
 {
@@ -73,7 +77,6 @@ int main()
     init_game_vars(); // Set up player/enemy scores
 
     title_screen();   // Show title screen.
-
     PAL_setPalette(PAL3, title_pal_1.data, DMA_QUEUE); // reset PAL3 after title
 
     initBackground(); // Initializes tiles, maps, and initial scroll
@@ -102,6 +105,9 @@ int main()
     while (1)
     {
         handleInput();
+        if (game_paused) {
+            pause_screen();
+        }
         playerBoost(); // Apply boost if needed.  Must be called before updatePhysics.
         updatePhysics();
 
