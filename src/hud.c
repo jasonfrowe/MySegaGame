@@ -3,7 +3,7 @@
 #include "globals.h" 
 #include "constants.h" // BAR_WIDTH_TILES ; STRIPS_PER_TILE
 #include "hud.h"
-#include "res/resources.h"
+#include "resources.h"
 
 void drawHud(){
 	// --- Draw Player Score ---

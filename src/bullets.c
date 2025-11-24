@@ -2,7 +2,7 @@
 #include <genesis.h>
 #include "globals.h" // For Bullet struct, bullets array, player_x/y, sin_fix, cos_fix, screen_width_pixels, etc.
 #include "bullets.h"
-#include "res/resources.h" // For bullet_sprite_res
+#include "resources.h" // For bullet_sprite_res
 // #include "fighters.h" // Not directly, globals.h has fighters array for collision
 
 // --- Initialize Bullet Pool ---

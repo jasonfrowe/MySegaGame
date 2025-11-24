@@ -2,7 +2,7 @@
 #include <genesis.h>
 #include "globals.h" // For Bullet struct, bullets array, player_x/y, sin_fix, cos_fix, screen_width_pixels, etc.
 #include "shield.h"
-#include "res/resources.h" 
+#include "resources.h" 
 
 void enableShield(){
 	if (new_shield_delay_timer >= shield_delay_max){ // This timer is incremented in handleInput

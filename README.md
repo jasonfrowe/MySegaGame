@@ -172,3 +172,36 @@ victory.
   - email: jason@jasonrowe.org
 - **Release Date:** Alpha - 2025-05-29
 
+## Building the ROM
+
+This project uses CMake with Docker integration for easy building:
+
+### Quick Build
+```bash
+# macOS/Linux
+./build.sh
+
+# Windows  
+build.bat
+```
+
+The ROM will be generated at `build/out.bin`
+
+### Build Options
+- `./build.sh --debug` - Build with debug symbols
+- `./build.sh --clean` - Clean build from scratch
+- `./build.sh --verbose` - Show detailed build output
+- `make` - Alternative using traditional Makefile
+
+### Requirements
+- Docker (automatically pulls SGDK toolchain)
+
+### Documentation
+- **Quick Start**: See [QUICKSTART.md](QUICKSTART.md)
+- **Full Documentation**: See [CMAKE_BUILD.md](CMAKE_BUILD.md)
+- **Setup Summary**: See [CMAKE_SETUP_SUMMARY.md](CMAKE_SETUP_SUMMARY.md)
+
+### Testing Your Build
+Run `./test-setup.sh` to verify your build environment is correctly configured.
+
+

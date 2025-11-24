@@ -1,0 +1,22 @@
+# MySegaGame Makefile for SGDK
+# This makefile works with the traditional SGDK build system
+
+# SGDK directory (set by Docker or local installation)
+ifndef GDK
+GDK = /sgdk
+endif
+
+# Project name
+PROJECTNAME = MySegaGame
+ROM_NAME = out
+
+# Source directories
+SRC_DIR = src
+INC_DIR = inc
+RES_DIR = res
+
+# Boot files
+BOOT_DIR = $(SRC_DIR)/boot
+
+# Include SGDK common makefile
+include $(GDK)/makefile.gen

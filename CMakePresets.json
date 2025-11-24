@@ -1,0 +1,53 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 22,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "default",
+      "displayName": "Default Config",
+      "description": "Default build using SGDK toolchain",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/cmake/SGDKToolchain.cmake"
+      }
+    },
+    {
+      "name": "debug",
+      "displayName": "Debug",
+      "description": "Debug build with symbols",
+      "inherits": "default",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "release",
+      "displayName": "Release",
+      "description": "Optimized release build",
+      "inherits": "default",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "release",
+      "displayName": "Release Build",
+      "configurePreset": "release",
+      "jobs": 4
+    },
+    {
+      "name": "debug",
+      "displayName": "Debug Build",
+      "configurePreset": "debug",
+      "jobs": 4
+    }
+  ]
+}
+

@@ -9,6 +9,27 @@ python_scripts/
 palette/
 assets/
 
+# CMake build artifacts
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+*.cmake
+!cmake/
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# Generated files
+*.bin
+*.elf
+*.map
+*.sym
+*.s
+*.h
+res/*.s
+res/*.h
+
 # Temporary and system-specific files
 *.tmp
 *.swp
@@ -22,3 +43,4 @@ assets/
 .vscode/
 *.sublime-workspace
 *.sublime-project
+.sgdk/

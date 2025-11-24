@@ -3,7 +3,7 @@
 #include "globals.h" // For Bullet struct, bullets array, player_x/y, sin_fix, cos_fix, screen_width_pixels, etc.
 #include "game_level_screen.h"
 #include "clear_sprites.h"
-#include "res/resources.h" // For sprites
+#include "resources.h" // For sprites
 
 #include "bullets.h"
 #include "ebullets.h"

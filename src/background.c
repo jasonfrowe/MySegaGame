@@ -2,7 +2,7 @@
 #include <genesis.h>
 #include "globals.h"    // For scroll offsets, player_scroll_delta_x/y, map constants
 #include "background.h"
-#include "res/resources.h" // For bg_far_tiles, bg_near_tiles for numTile
+#include "resources.h" // For bg_far_tiles, bg_near_tiles for numTile
 
 void initBackground(void) {
 

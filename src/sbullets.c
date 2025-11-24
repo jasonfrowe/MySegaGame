@@ -2,7 +2,7 @@
 #include <genesis.h>
 #include "globals.h" // For Bullet struct, bullets array, player_x/y, sin_fix, cos_fix, screen_width_pixels, etc.
 #include "sbullets.h"
-#include "res/resources.h" // For bullet_sprite_res
+#include "resources.h" // For bullet_sprite_res
 
 // --- Initialize S_Bullet Pool ---
 void init_SBullets() {

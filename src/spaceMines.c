@@ -2,7 +2,7 @@
 #include <genesis.h>
 #include "globals.h" 
 #include "spaceMines.h"
-#include "res/resources.h" 
+#include "resources.h" 
 
 
 void placeMine(){

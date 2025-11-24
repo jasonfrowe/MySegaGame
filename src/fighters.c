@@ -2,7 +2,7 @@
 #include <genesis.h>
 #include "globals.h" // For Fighter struct, fighters array, player_x/y, map constants, screen_width_pixels etc.
 #include "fighters.h"
-#include "res/resources.h" // For fighter_sprite_res
+#include "resources.h" // For fighter_sprite_res
 
 void initFighters(){
     for (s16 i = 0; i < active_fighter_count; i++) {

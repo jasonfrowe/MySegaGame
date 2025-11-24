@@ -1,7 +1,7 @@
 // title_screen.c
 #include <genesis.h>
 #include "globals.h" // For Fighter struct, fighters array, player_x/y, map constants, screen_width_pixels etc.
-#include "res/resources.h" 
+#include "resources.h" 
 #include "title_screen.h"
 
 
